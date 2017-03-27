@@ -8,10 +8,10 @@ class Product(models.Model):
     category = models.ForeignKey('Category', related_name='product_category')
 
     def __str__(self):
-        return self.product
+        return self.name
 
     def __unicode__(self):
-        return self.product
+        return self.name
 
 
 class Category(models.Model):
